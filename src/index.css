@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-blue: #1D4ED8;
+  --color-dark-blue: #061325;
+  --color-secondary-blue: #0C2340;
+  --color-orangish-yellow: #F59E0B;
+  --color-yellow-light: #FBBF24;
+  --color-yellow-soft: #FEF3C7;
+  --color-bg: #F8FAFC;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #64748B;
+  --color-border-subtle: #E2E8F0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
+
+/* Editorial & brand styling utilities */
+.font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #061325 0%, #0C2340 50%, #1D4ED8 100%);
+}
+
+.brand-accent-gradient {
+  background: linear-gradient(135deg, #F59E0B 0%, #F97316 100%);
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #061325 0%, #0C2340 50%, #1D4ED8 100%);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
